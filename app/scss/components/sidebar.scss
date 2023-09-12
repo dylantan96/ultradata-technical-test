@@ -1,0 +1,24 @@
+@use '../util/' as *;
+
+.sidebar {
+    width: 100%;
+
+    @media (min-width: map-get($breakpoints-up,'md')) {
+        width: 6rem;
+    }
+
+    &__ul {
+        overflow: auto;
+    }
+
+    &__li {
+        & a {
+            width: 25vw;
+
+            @media (min-width: map-get($breakpoints-up,'md')) {
+                width: auto;
+                border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+            }
+        }
+    }
+}
