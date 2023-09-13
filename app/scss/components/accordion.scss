@@ -1,0 +1,22 @@
+#accordionSitemap {
+    & .accordion-button {
+        &::after {
+            margin-left: 0.5rem;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.125);
+        }
+
+        &:not(.collapsed) {
+            color: unset;
+            background: none;
+            box-shadow: none;
+
+            &::after {
+                background-image: var(--bs-accordion-btn-icon);
+            }
+        }
+    }
+}

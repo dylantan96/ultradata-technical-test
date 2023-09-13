@@ -1,0 +1,15 @@
+@use "../util/" as *;
+
+.nav {
+    &--divider {
+        & .nav-item {
+            &:not(:last-child) {
+                & .nav-link {
+                    @media (min-width: map-get($breakpoints-up,"xs")) {
+                        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+                    }
+                }
+            }   
+        }
+    }
+}
