@@ -1,0 +1,47 @@
+@use "../util/" as *;
+
+.btn {
+    &-primary {
+        background-color: $primary-color !important ;
+        border-color: $primary-color !important ;
+
+        &-shade-1 {
+            background-color: $primary-color-shade-1 !important ;
+            border-color: $primary-color-shade-1 !important ;
+        }
+        &-shade-2 {
+            background-color: $primary-color-shade-2 !important ;
+            border-color: $primary-color-shade-2 !important ;
+        }
+        &-shade-3 {
+            background-color: $primary-color-shade-3 !important ;
+            border-color: $primary-color-shade-3 !important ;
+        }
+        &-shade-4 {
+            background-color: $primary-color-shade-4 !important ;
+            border-color: $primary-color-shade-4 !important ;
+        }
+    }
+
+    &-secondary {
+        background-color: $secondary-color !important ;
+        border-color: $secondary-color !important ;
+
+        &-shade-1 {
+            background-color: $secondary-color-shade-1 !important ;
+            border-color: $secondary-color-shade-1 !important ;
+        }
+        &-shade-2 {
+            background-color: $secondary-color-shade-2 !important ;
+            border-color: $secondary-color-shade-2 !important ;
+        }
+        &-shade-3 {
+            background-color: $secondary-color-shade-3 !important ;
+            border-color: $secondary-color-shade-3 !important ;
+        }
+        &-shade-4 {
+            background-color: $secondary-color-shade-4 !important ;
+            border-color: $secondary-color-shade-4 !important ;
+        }
+    }
+}

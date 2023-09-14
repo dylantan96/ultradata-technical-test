@@ -1,3 +1,4 @@
+@use "../util/" as *;
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -5,17 +6,26 @@
 .carousel {
     // margin-bottom: 4rem;
     width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.176);
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    // bottom: 3rem;
-    top: 50%;
     bottom: 0;
-    z-index: 10;
+    top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(15);
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
+    height: 24rem;
 }

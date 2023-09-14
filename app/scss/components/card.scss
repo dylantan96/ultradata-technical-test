@@ -1,5 +1,19 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
 .card {
-    padding: rem(15);
+    &--menu-items {
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        // background-color: $secondary-color-shade-4 !important;
+        color: $secondary-color !important;
+
+        &:hover {
+            background-color: $primary-color !important;
+            color: $secondary-color !important;
+        }
+    }
+
+    &--rounded-start {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }

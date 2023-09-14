@@ -14,10 +14,18 @@
     &__li {
         & a {
             width: 25vw;
-
+            
             @media (min-width: map-get($breakpoints-up,'md')) {
                 width: auto;
                 border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+            }
+
+            &.nav-link {
+                &:hover {
+                    text-decoration: none;
+                    background-color: $secondary-color !important;
+                    color: $secondary-color-shade-4 !important;
+                }
             }
         }
     }

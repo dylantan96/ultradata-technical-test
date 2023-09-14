@@ -9,7 +9,14 @@
                         border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
                     }
                 }
-            }   
+            }
+        }
+    }
+
+    &-link {
+        color: $secondary-color;
+        &:hover {
+            color: $secondary-color-shade-1;
         }
     }
 }
