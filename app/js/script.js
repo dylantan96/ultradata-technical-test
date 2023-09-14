@@ -1,5 +1,3 @@
-console.log('Hello World');
-
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
