@@ -12,8 +12,15 @@
         }
     }
 
-    &--rounded-start {
-        border-top-right-radius: 0;
+    &--custom-rounded {
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+
+        @media (min-width: map-get($breakpoints-up,"lg")) {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 0;
+        }
     }
 }

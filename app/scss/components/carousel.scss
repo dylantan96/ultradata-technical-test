@@ -10,7 +10,13 @@
     border: 1px solid rgba(0, 0, 0, 0.176);
     border-radius: 6px;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+
+    @media (min-width: map-get($breakpoints-up,"lg")) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0;
+    }
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
